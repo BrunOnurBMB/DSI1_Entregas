@@ -102,7 +102,7 @@ public class TelaAlteracao extends JFrame {
 				
 				//Validando antes de efetivar a alteração
 				//Setando a senha usuário
-				//usu.setSenha(confPassSenha.getText());
+				usu.setSenha(confPassSenha.getText());
 				usu.setUsuario(usuarioSistema);
 				
 				//Nome Vazio
@@ -137,7 +137,7 @@ public class TelaAlteracao extends JFrame {
 				} else {
 					//Efetivo a alteração do usuário
 					atualizacaoValida = 
-									usu.alteraUsuario(txtNome.getText(), usu.getUsuario(), confPassSenha);
+									usu.alteraUsuario(txtNome.getText(), usu.getUsuario(), usu.getSenha());
 					
 					if (atualizacaoValida == true) {
 						//Usuario cadastrado na base da dados
