@@ -155,10 +155,6 @@ public class TelaAlteracao extends JFrame {
 						//Usuario cadastrado na base da daos
 						JOptionPane.showMessageDialog(null, "Problemas ao atualizar o usuário", 
 															"Atenção", JOptionPane.ERROR_MESSAGE);
-						System.out.println(usu.getNome());
-						System.out.println(usu.getSenha());
-						System.out.println(usu.verificaUsuario(usu.getUsuario()));
-						System.out.println(passSenha.getText().equals(confPassSenha.getText()));
 					}
 				}
 			} catch (HeadlessException ec) {

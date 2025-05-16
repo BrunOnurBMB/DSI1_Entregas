@@ -147,9 +147,11 @@ public class Usuario {
 			
 			//Executando a alteração no banco de dados
 			banco.stmt.execute("UPDATE usuario SET nome = '" + nome +
-					"', senha = md5'" + senha + "' WHERE usuario = '" +
+					"', senha = md5('" + senha + "') WHERE usuario = '" +
 					usuario + "'");
-		
+			//Se chegou aqui a alteração ocorreu com sucesso
+			resultAlteracao = true;
+			
 		} catch (Exception ec) {
 			System.out.println("Erro ao atualizar o usuário " + ec.getMessage());
 			resultAlteracao = false;
