@@ -1,0 +1,28 @@
+https://github.com/BrunOnurBMB/DSI1/tree/main/P_Um
+
+# Projeto Lista
+
+Nesse projeto, eu comecei um sistema de Listas onde minha intenção é agregar mais classes.  
+Neste momento, fiz a classe **Lista** e a classe **ListaEstudo**, que herda as informações de **Lista**.  
+
+## Conceitos Utilizados
+
+- **Classe**
+- **Pacote**
+- **Atributo**
+- **Getters**
+- **Setters**
+- **Sobrecarga de método**
+- **Encapsulamento**
+- **Reescrita de método**
+- **LocalDateTime**
+- **DateTimeFormatter**
+- **StringBuilder**
+- **Array**
+- **Estruturas lógicas**
+  - `for`
+  - `forEach`
+  - `while`
+- **Estrutura de decisão**
+  - `if else`
+- **Operador ternário**
