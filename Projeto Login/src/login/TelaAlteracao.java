@@ -87,13 +87,14 @@ public class TelaAlteracao extends JFrame {
 		btnCancelar.setBounds(50, 136, 117, 25);
 		tela.add(btnCancelar);
 		
+		//Botão cancelar
 		btnCancelar.addActionListener((ActionEvent e) -> {
 			TelaInicio telaIni = new TelaInicio();
 			telaIni.setVisible(true);
 			dispose();
 		});
 		
-		//Botão de alterar
+		//Botão de alteraração
 		btnAlterar.addActionListener((ActionEvent e) -> {
 			try {
 				//Intânciando a classe usuário
@@ -101,7 +102,7 @@ public class TelaAlteracao extends JFrame {
 				
 				//Validando antes de efetivar a alteração
 				//Setando a senha usuário
-				usu.setSenha(confPassSenha.getText());
+				//usu.setSenha(confPassSenha.getText());
 				usu.setUsuario(usuarioSistema);
 				
 				//Nome Vazio
@@ -128,7 +129,7 @@ public class TelaAlteracao extends JFrame {
 					
 				}else if(!passSenha.getText().equals(confPassSenha.getText())) {
 					//Mensagem em tela
-					JOptionPane.showMessageDialog(null, "Campos de Senha e confirmação de senha nã coincidem",
+					JOptionPane.showMessageDialog(null, "Campos de Senha e confirmação de senha não coincidem",
 														"Atenção", JOptionPane.ERROR_MESSAGE);
 					//voltar o cursor para o campo passSenha
 					passSenha.grabFocus();
@@ -136,7 +137,7 @@ public class TelaAlteracao extends JFrame {
 				} else {
 					//Efetivo a alteração do usuário
 					atualizacaoValida = 
-									usu.alteraUsuario(usu.getNome(), usu.getUsuario(), usu.getSenha());
+									usu.alteraUsuario(txtNome.getText(), usu.getUsuario(), confPassSenha);
 					
 					if (atualizacaoValida == true) {
 						//Usuario cadastrado na base da dados
